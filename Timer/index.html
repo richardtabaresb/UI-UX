@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9 user-scalable=0 interactive-widget=resizes-content">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="/src/fontawesome-free-6.3.0-web/css/fontawesome.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/fontawesome-free-6.3.0-web/css/solid.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/fontawesome-free-6.3.0-web/css/brands.css" crossorigin="anonymous">
+    <title>Timer - Controla tu tiempo</title>
+</head>
+
+<body id="hola">
+    <div class="h-screen bg-primary p-5 font-Oswald flex flex-col items-center justify-center">
+        <div class="grid grid-rows-2 text-center">
+            <span class="text-second text-5xl mb-1">Timer</span>
+            <span class="text-gray-200 ">Contorla tu tiempo</span>
+        </div>
+        <div class="">
+            <div class="text-gray-200 mb-5 mt-12">
+                <div class="w-auto h-auto flex justify-center items-center">
+                    <div class="text-[2rem] px-6 py-2 mx-0 bg-third rounded-l-md shadow-xl">
+                        <i class="fa-solid fa-minus m-0 p-0 hover:text-second cursor-pointer" id="minus"></i>
+                    </div>
+                    <input type="text" class="w-20 bg-third text-[2rem] px-6 py-2 mx-0 text-center" id="time"
+                        data-time="25" value="25">
+                    <div class="text-[2rem] px-6 py-2 mx-0 bg-third rounded-r-md shadow-xl">
+                        <i class="fa-solid fa-plus m-0 p-0 hover:text-second cursor-pointer" id="plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class=" text-gray-200 h-auto mb-7 flex justify-center items-center">
+                <div class="bg-third w-48 text-center text-[7rem] border-gray-500 border-r-2 rounded-l-md shadow-xl"
+                    id="countDownMinutes">25</div>
+                <div class="bg-third w-48 text-center text-[7rem] rounded-r-md shadow-xl" id="countDownSeconds">00</div>
+            </div>
+            <div class="text-gray-200 flex justify-center items-center">
+                <i class="fa-solid fa-play px-7 pr-6 text-[2rem] hover:text-second cursor-pointer" id="play"></i>
+                <i class="fa-solid fa-pause px-7 text-[2rem] hover:text-second cursor-pointer" id="pause"></i>
+                <i class="fa-solid fa-stop px-7 text-[2rem] hover:text-second cursor-pointer" id="stop"></i>
+            </div>
+        </div>
+    </div>
+    <script src="/src/js/scripts.js"></script>
+</body>
+
+</html>
